@@ -1,4 +1,4 @@
-__author__ = "Raffaele Lillo, Valerie Marchenko, Zheng Wang"
+__author__ = "Raffaele Lillo"
 __version__ = "1.0"
 
 from pyspark.sql.functions import udf
@@ -14,26 +14,10 @@ tab_pap_daily_action_pp_aggDay = 'daily_action_pp_aggDay'     #This will be used
 
 
 
-#db_player_profile_parquet = '/home/admin/data/pap/test/kpi_player_profile_rgs_gsys/'
-#db_player_profile_parquet = 'hdfs://LXRP-BIGD-DN-01:8020/user/hive/warehouse/kpi_player_profile/'
-#complete data set 
 db_player_profile_parquet = '/home/admin/data/pap_v_0_1/player_profile_full'
 db_player_profile_other_parquet = '/home/admin/data/pap_v_0_1/player_profile_other_full'
-#db_player_profile_parquet = 'hdfs://LXRP-BIGD-DN-01:8020/user/hive/warehouse/pap.db/kpi_player_profile_new'
-#db_player_profile_parquet = 'hdfs://LXRP-BIGD-DN-01:8020/user/admin/datalake/pap/dailyaction'
-#db_player_profile_parquet = '/user/hive/warehouse/kpi_player_profile_sample/'
-#db_player_profile_parquet = '/home/admin/data/pap/test/kpi_player_profile/'
-#db_daily_action_parquet = '/home/admin/data/pap/test/daily_action_rgs_gsys/'
-#db_daily_action_parquet = 'hdfs://LXRP-BIGD-DN-01:8020/user/admin/datalake/pap/dailyaction_sample'
-#complete daily action
-#db_daily_action_parquet = 'hdfs://LXRP-BIGD-DN-01:8020/user/admin/dev/datalake/pap/dailyaction'
 db_daily_action_parquet = '/home/admin/data/pap_v_0_1/daily_action_full'
 
-#db_daily_action_parquet = '/user/hive/warehouse/daily_action_sample/'
-#db_daily_action_parquet = '/home/admin/data/pap/test/daily_action_test/'
-#db_games_info_parquet = '/home/admin/data/gap/test/games_info/'
-db_games_info_parquet = 'hdfs://LXRP-BIGD-DN-01:8020/user/hive/warehouse/games_info_sample/'
-#db_games_info_parquet = '/user/hive/warehouse/games_info_sample/'
 tableDict = {
     'player_profile': db_player_profile_parquet,
     'daily_action': db_daily_action_parquet
